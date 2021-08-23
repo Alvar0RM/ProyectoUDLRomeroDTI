@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../resources/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../resources/css/style.css">
+  
+  <title>TODO supply a title</title>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-6">
+        <div class="jumbotron">
+          <h2 class="text-center mb-5">Captura Datos Alumnos</h2>
+          
+          <form action="../resources/java/alta.jsp" method="POST">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="txtMatricula" name="txtMatricula" placeholder="Matricula">
+              <label for="txtMatricula">Matricula</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="txtNombre" name="txtNombre" placeholder="Nombre">
+              <label for="txtNombre">Nombre</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="txtApellido" name="txtApellido" placeholder="Apellido Paterno">
+              <label for="txtApellido">Apellido Paterno</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="txtApellidoM" name="txtApellidoM" placeholder="Apellido Materno">
+              <label for="txtApellidoM">Apellido Materno</label>
+            </div>
+
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+              <input type="reset" class="btn btn-danger me-md-2" value="Restablecer">
+              <input type="submit" class="btn btn-success" value="Nuevo Registro de Alumnos">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="../resources/js/bootstrap.min.js"></script>
+  <script src="../resources/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
